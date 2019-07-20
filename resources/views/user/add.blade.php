@@ -25,7 +25,7 @@
                         @lang('app.user_details')
                     </h5>
                     <p class="text-muted font-weight-light">
-                        A general user profile information.
+                        ข้อมูลทั่วไปของผู้ใช้งาน
                     </p>
                 </div>
                 <div class="col-md-9">
