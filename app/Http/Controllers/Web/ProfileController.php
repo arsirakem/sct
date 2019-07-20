@@ -69,7 +69,7 @@ class ProfileController extends Controller
             'user' => $this->theUser,
             'edit' => true,
             'roles' => $roles,
-            'countries' => [0 => 'Select a Country'] + $countryRepository->lists()->toArray(),
+            'countries' => [0 => 'เลือกประเทศ'] + $countryRepository->lists()->toArray(),
             'socialLogins' => $this->users->getUserSocialLogins($this->theUser->id),
             'statuses' => UserStatus::lists()
         ]);
