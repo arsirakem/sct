@@ -28,11 +28,11 @@
         <div class="form-group">
             <label for="mt4pw">รหัสผ่านบัญชี MT4</label>
             <input type="text" class="form-control" for="mt4pw"
-                   name=for="mt4pw" placeholder="รหัส MT4 ของคุณ" value="{{ $edit ? $user->mt4pw : '' }}">
+                   name="mt4pw" for="mt4pw" placeholder="รหัส MT4 ของคุณ" value="{{ $edit ? $user->mt4pw : '' }}">
         </div>
         <div class="form-group">
             <label for="mt4server">เซิร์ฟเวอร์ MT4</label>
-                <select name="mt4server" id="mt4server" class="form-control">
+                <select name="mt4server" id="mt4server" class="form-control" value="{{ $edit ? $user->mt4server : '' }}">
                     <option>WindsorBrokers-REAL</option>
                     <option>InfinoxCapital-Live03</option>
                 </select>
