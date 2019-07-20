@@ -18,6 +18,11 @@ class UserPresenter extends Presenter
         return trim($this->name()) ?: $this->entity->email;
     }
 
+    public function mt4id()
+    {
+        return sprintf("%s",$this->entity->mt4id);
+    }
+
     public function avatar()
     {
         if (! $this->entity->avatar) {
@@ -51,6 +56,7 @@ class UserPresenter extends Presenter
 
         return $address ?: 'N/A';
     }
+
 
     public function lastLogin()
     {
