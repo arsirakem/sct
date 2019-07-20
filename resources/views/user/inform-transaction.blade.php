@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('page-title', 'Active Users')
-@section('page-heading', 'Active Users')
+@section('page-title', 'แจ้งการโอนเงิน')
+@section('page-heading', 'แจ้งการโอนเงิน')
 
 @section('breadcrumbs')
     <li class="breadcrumb-item active">
-        Active Users
+        แจ้งการโอนเงิน
     </li>
 @stop
 
@@ -27,6 +27,7 @@
         </div>
     @endforeach
 @stop
+
 
 @section('styles')
     <style>
