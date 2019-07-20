@@ -36,7 +36,7 @@
             background-color: #fff;
             padding: 15px 20px;
             border-radius: 4px;
-            margin-right: 15px;
+            margin-right: 20px;
         }
     </style>
 @stop
