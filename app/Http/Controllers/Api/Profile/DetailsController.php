@@ -45,7 +45,7 @@ class DetailsController extends ApiController
 
         $data = $data->only([
             'first_name', 'last_name', 'birthday',
-            'phone', 'address', 'country_id', 'mt4id', 'mt4pw'
+            'phone', 'address', 'country_id', 'mt4id', 'mt4pw' , 'mt4server'
         ])->toArray();
 
         if (! isset($data['country_id'])) {
