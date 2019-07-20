@@ -21,12 +21,12 @@
                    name="last_name" placeholder="@lang('app.last_name')" value="{{ $edit ? $user->last_name : '' }}">
         </div>
         <div class="form-group">
-            <label for="mt4id">MT4 ID</label>
+            <label for="mt4id">เลขบัญชี MT4</label>
             <input type="text" class="form-control" id="mt4id"
                    name="mt4id" placeholder="เลขบัญชี MT4 ของคุณ" value="{{ $edit ? $user->mt4id : '' }}">
         </div>
         <div class="form-group">
-            <label for="mt4pw">@lang('app.last_name')</label>
+            <label for="mt4pw">รหัสผ่านบัญชี MT4</label>
             <input type="text" class="form-control" for="mt4pw"
                    name=for="mt4pw" placeholder="รหัส MT4 ของคุณ" value="{{ $edit ? $user->mt4pw : '' }}">
         </div>
