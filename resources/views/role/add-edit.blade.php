@@ -30,7 +30,7 @@
                     @lang('app.role_details_big')
                 </h5>
                 <p class="text-muted">
-                    A general role information.
+                    ข้อมูลทั่วไปของผู้ใช้งาน
                 </p>
             </div>
             <div class="col-md-9">

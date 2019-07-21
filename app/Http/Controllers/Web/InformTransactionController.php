@@ -14,9 +14,9 @@ class InformTransactionController extends Controller
         // Allow access to users with 'users.manage' permission.
         $this->middleware('permission:users.manage');
     }
-    
+
     public function index()
     {
-        return view('user.inform-transaction');   
+        return view('user.inform-transaction'); 
     }
 }

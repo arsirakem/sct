@@ -102,7 +102,7 @@ class UsersController extends Controller
      */
     private function parseCountries(CountryRepository $countryRepository)
     {
-        return [0 => 'Select a Country'] + $countryRepository->lists()->toArray();
+        return [0 => 'โปรดเลือกประเทศ'] + $countryRepository->lists()->toArray();
     }
 
     /**
