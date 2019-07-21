@@ -30,14 +30,8 @@
         <ul class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('/') ? 'active' : ''  }}" href="{{ route('dashboard') }}">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-home"></i>
                     <span>@lang('app.dashboard')</span>
-                </a>
-            </li>
-			<li class="nav-item">
-                <a class="nav-link {{ Request::is('/') ? 'active' : ''  }}" href="{{ route('inform-transaction') }}">
-                    <i class="fas fa-calendar-check"></i>
-					<span>@lang('app.inform_transaction')</span>
                 </a>
             </li>
 

@@ -84,14 +84,11 @@ Route::group(['middleware' => 'auth'], function () {
         'uses' => 'ProfileController@index'
     ]);
 
-    Route::get('inform-transaction', 'InformTransactionController@index')->name('inform-transaction');
-
     Route::get('profile/activity', [
         'as' => 'profile.activity',
         'uses' => 'ProfileController@activity'
     ]);
 
-    Route::get('mt4-section', 'Mt4Controller@index')->name('mt4-section');
 
     Route::put('profile/details/update', [
         'as' => 'profile.update.details',
