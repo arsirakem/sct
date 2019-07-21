@@ -30,16 +30,31 @@
         <ul class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('/') ? 'active' : ''  }}" href="{{ route('dashboard') }}">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-home"></i>
                     <span>@lang('app.dashboard')</span>
                 </a>
             </li>
-			<li class="nav-item">
-                <a class="nav-link {{ Request::is('/') ? 'active' : ''  }}" href="{{ route('inform-transaction') }}">
-                    <i class="fas fa-calendar-check"></i>
-					<span>@lang('app.inform_transaction')</span>
+
+            <li class="nav-item">
+                <a class="nav-link {{ Request::is('/managemt4') ? 'active' : ''  }}" href="#">
+                    <i class="fas fa-users fa-3x"></i>
+                    <span>แจ้งยอดค่าบริการ</span>
                 </a>
             </li>
+ 
+            <li class="nav-item">
+                <a class="nav-link {{ Request::is('/inform-transaction') ? 'active' : ''  }}" href="#">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>แจ้งการโอนเงิน</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Request::is('/managemt4') ? 'active' : ''  }}" href="#">
+                    <i class="fas fa-sitemap"></i>
+                    <span>จัดการบัญชี MT4</span>
+                </a>
+            </li>
+
 
             @permission('users.manage')
             <li class="nav-item">
