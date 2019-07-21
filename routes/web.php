@@ -91,7 +91,7 @@ Route::group(['middleware' => 'auth'], function () {
         'uses' => 'ProfileController@activity'
     ]);
 
-    Route::get('mt4-section', 'Mt4Controller@add')->name('mt4-section');
+    Route::get('mt4-section', 'Mt4Controller@index')->name('mt4-section');
 
     Route::put('profile/details/update', [
         'as' => 'profile.update.details',
