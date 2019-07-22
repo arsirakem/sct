@@ -76,6 +76,15 @@ Route::group(['middleware' => 'auth'], function () {
     ]);
 
     /**
+     * Additional Page
+     */
+    Route::get('fees', 'FeesController@index')->name('fees');
+    
+    Route::get('inform-transaction', 'InformTransactionController@index')->name('inform-transaction');
+
+    Route::get('managemt4', 'Managemt4Controller@index')->name('managemt4');
+
+    /**
      * User Profile
      */
 
