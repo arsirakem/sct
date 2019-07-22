@@ -17,4 +17,10 @@ class Managemt4Controller extends Controller
     {
         return view('user.managemt4');
     }
+
+    public function update()
+    {
+        return view('user.managemt4');
+    }
+
 }
